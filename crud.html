@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Simple CRUD</title>
+    </head>
+    <body>
+        <h1>BLOG POSTS</h1>
+        <ul id="list">
+
+        </ul>
+        <button id="addBtn">Add Blog Post</button>
+
+        <dialog id="add">
+            <form method="dialog">
+                <label for="title">Post Title</label><br />
+                <input type="text" id="title" name="title"><br />
+                <label for="date">Date</label><br />
+                <input type="date" id="date" name="date"><br />
+                <label for="summary">Post Summary</label><br />
+                <textarea id="summary" name="summary" rows="4" cols="50"></textarea><br />
+
+                <button id="submitPrompt" type="submit" value="true">Confirm</button>
+                <button id="cancelPrompt" value="false">Cancel</button>
+            </form>
+        </dialog>
+
+        <dialog id="edit">
+            <form method="dialog">
+                <label for="editTitle">Post Title</label><br />
+                <input type="text" id="editTitle" name="editTitle"><br />
+                <label for="editDate">Date</label><br />
+                <input type="date" id="editDate" name="editDate"><br />
+                <label for="editSummary">Post Summary</label><br />
+                <textarea id="editSummary" name="editSummary" rows="4" cols="50"></textarea><br />
+
+                <button id="submitPrompt" type="submit" value="true">Save Edit</button>
+                <button id="cancelPrompt" value="false">Cancel</button>
+            </form>
+        </dialog>
+
+        <dialog id="delete">
+            <form method="dialog">
+                <p>Delete?</p>
+                <button id="confirmModal" value="true">Confirm</button>
+                <button id="cancelModal" value="false">Cancel</button>
+            </form>
+        </dialog>
+        <script type="module" src="blog.js"></script>
+        <script type="module" src="add.js"></script>
+        <script type="module" src="edit.js"></script>
+        <script type="module" src="delete.js"></script>
+    </body>
+</html>

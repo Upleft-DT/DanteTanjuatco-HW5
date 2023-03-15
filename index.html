@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Dante Tanjuatco's Website</title>
+    <meta charset="utf-8" />
+	<meta name="description" content="Dante Tanjuatco's Resume Website" />
+	<meta name="keywords" content="HTML, CSS, JavaScript" />
+	<meta name="author" content="Dante Tanjuatco" />
+    <link href="images/favicon.ico" rel="icon" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SY0SFX9H98"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SY0SFX9H98');
+</script>
+
+
+<body class="container">
+    <header id="home">
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about-me">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact-me">Contact</a>
+        </nav>
+        <section id="headline">
+            <h1>Dante Tanjuatco</h1>
+            <h3><em>Software Developer</em></h3>
+            <nav>
+                <a>LinkedIn</a>
+                <a>Email</a>
+                <a>Github</a>
+                <a>Phone</a>
+            </nav>
+        </section>
+    </header>
+    <aside id="left-side"></aside>
+    <aside id="right-side"></aside>
+    <main>
+        <section id="about-me">
+            <div class="section-header">
+                <p><em>Here's who I am...</em></p>
+                <h2>About Me</h2>
+            </div>
+            <div id="introduction">
+                <p>
+                    <img src="images/Dante_50.jpg" alt="Portrait of Dante Tanjuatco" id="portrait" />
+                    I am a software developer looking to push the boundaries of Technology in the health sector. I am University of California San Diego
+                    class of 2022, with a B.S. in Computer Science. My interests are Browsers, Application Security, and the list is still being expanded.
+                </p>
+            </div>
+            <div id="more-about">
+                <h3>A little more...</h3>
+                <p>I'm currently employed but am open to new opportunites. If I'm a good fit, contact me via Email at dantnjtc46@gmail.com.</p>
+                <ul>
+                    <li>
+                        <span>Full Name:</span>
+                        <br />
+                        Dante Tanjuatco
+                    </li>
+                    <li>
+                        <span>LinkedIn:</span>
+                        <br />
+                        <a href="https://www.linkedin.com/in/dtsd/">linkedin.com/in/dtsd/</a>
+                    </li>
+                    <li>
+                        <span>Email:</span>
+                        <br />
+                        dantnjtc46@gmail.com
+                    </li>
+                </ul>
+            </div>
+            <div id="skills">
+                <h3>Skills</h3>
+                <p>
+                    I'm a strong teamworker with experience in coding and research. I am flexible and open to use any tool given the situation calls for it.
+                    That being said, here are some skills I'm confident in.
+                </p>
+                <ul>
+                    <li>JavaScript/TypeScript</li>
+                    <li>Java</li>
+                    <li>C++</li>
+                    <li>Python</li>
+                </ul> 
+            </div>
+        </section>
+
+        <section id="experience">
+            <div class="section-header">
+                <p><em>Here's my resume...</em></p>
+                <h2>Experience</h2>
+            </div>
+            <table>
+                <caption>Timeline</caption>
+                <colgroup>
+                    <col span="2">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>Where</th>
+                        <th>Role and Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img /><h4>Amazon</h4></td>
+                        <td>
+                            <strong>Software Engineer Intern</strong><br/><em>June 2022 - September 2022</em><br/>
+                            Designed and implemented a centralized Data Repository Service fronted by a user interface.
+                            Participated in product demonstrations with stakeholders, other engineers, and management, showcasing the
+                            products features during iterations and responding to feedback.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img /><h4>Headspace Health</h4></td>
+                        <td>
+                            <strong>Security Engineer Intern</strong><br/><em>June 2021 - September 2021</em><br/>
+                            Engineered an AppSec-based project that introduced vulnerability patches to every CI/CD pipeline within the
+                            company codebase. All with constant feedback from stakeholders. Boosted the efficiency of analyzing audit logs by establishing a centralized logging system, inducing a 40 percent
+                            speedup in audit time.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img /><h4>High Performance Architecture Lab (UCSD)</h4></td>
+                        <td>
+                            <strong>Undergraduate Researcher</strong><br/><em>September 2021 - June 2022</em><br/>
+                            Worked in a team of four to reverse engineer CPUs in order to identify security vulnerabilities.
+                            Created low-level microbenchmarks written in C to measure the parameters of the Ryzen 5 3600 cache.
+                            Conducted public presentations at the University of California San Diego and presented our research at the ERSP
+                            National Conference.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="projects">
+            <div class="section-header">
+                <h2>Projects</h2>
+            </div>
+            <details>
+                <summary>Huffman File Compressor</summary>
+                <p>
+                    Constructed a file compressor program to compress and decompress files with zero loss and savings up to 80 percent
+                </p>
+            </details>
+        </section>
+
+        <section id="contact-me">
+            <div class="section-header">
+                h2>Contact Me</h2>
+            </div>
+            <nav>
+                <a>LinkedIn</a>
+                <a>Email</a>
+                <a>Github</a>
+                <a>Phone</a>
+            </nav>
+            <form>
+                <fieldset>
+                    <legend>Hit Me Up</legend>
+                    <label for="firstName">First Name:
+                        <input type="text" name="firstName" id="firstName"/>
+                    </label>
+                    <label for="lastName">Last Name:
+                        <input type="text" name="lastName" id="lastName"/>
+                    </label>
+                    <label for="email">Email:
+                        <input type="text" name="email" id="email"/>
+                    </label>
+                    <label for="message">Message:
+                        <textarea id="message" name="message">
+                            Shoot me a message!
+                        </textarea>
+                    </label>
+                    <label for="findMethod">How did you find me?</label>
+                    <select name="findMethod" id="findMethod">
+                        <option value="searched">Search Engine</option>
+                        <option value="referred">Referred</option>
+                        <option value="application">Application</option>
+                        <option value="other">Other</option>
+                    </select> 
+                </fieldset>
+                <button type="submit">submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Made by Dante Tanjuatco</p>
+    </footer>
+</body>
+
+</html>

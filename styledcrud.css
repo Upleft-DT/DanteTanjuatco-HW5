@@ -1,0 +1,83 @@
+.pencil {
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-image: url("images/pencil-solid.svg");
+    background-repeat: no-repeat;
+}
+
+.trash {
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-image: url("images/trash-solid.svg");
+    background-repeat: no-repeat;
+}
+
+.edit, .delete {
+    background-color: #bae8e8;
+    border: none;
+    color: white;
+    padding: 8px 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#addBtn {
+    margin-top: 10px;
+    padding: 10px   10px;
+    color: #272343;
+    background-color: #ffd803;
+}
+
+h1 {
+    color: #272343;
+}
+
+h3 {
+    color: #fffffe;
+}
+
+body {
+    font-family: proxima-nova, sans-serif;
+    background-color: #fffffe;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+li {
+    background-color: #272343;
+    margin: 0px;
+}
+
+li > p {
+    color: #fffffe;
+}
+li > p:first-of-type {
+    font-style: italic;
+}
+
+dialog {
+    border: none;
+    background-color: #bae8e8;
+}
+
+form {
+    box-sizing: border-box;
+    display: grid;
+  grid-template-columns: 1fr;
+  gap: .5rem;
+    border-radius: 1rem;
+}
+form > button {
+    border: none;
+    color: #fffffe;
+    color: #272343;
+    background-color: #ffd803;
+}
+
+
