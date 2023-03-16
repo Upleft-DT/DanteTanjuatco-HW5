@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Method Test</title>
+    </head>
+    <body>
+        <div>
+            <form>
+                <label for="recordId">ID</label><br />
+                <input type="number" id="recordId" name="recordId"><br />
+
+                <label for="articleName">Article Name</label><br />
+                <input type="text" id="articleName" name="articleName"><br />
+
+                <label for="articleBody">Article Body</label><br />
+                <textarea id="articleBody" name="articleBody" rows="4" cols="50"></textarea><br />
+
+            </form>
+        </div>
+        <div>
+            <input type="button" value="Post" id="postButton">
+            <input type="button" value="Get" id="getButton">
+            <input type="button" value="Put" id="putButton">
+            <input type="button" value="Delete" id="delButton">
+        </div>
+        <div>
+            <output id="response" style="white-space: pre;"></output>
+        </div>
+        <script type="module" src="postform.js"></script>
+        <script type="module" src="getform.js"></script>
+        <script type="module" src="putform.js"></script>
+        <script type="module" src="delform.js"></script>
+        <script>
+            function timestamp () {
+                let current = new Date();
+                let currentDate = current.getFullYear() + "-" + (current.getMonth() + 1) + "-" + current.getDate();
+                let currentTime = current.getHours() + ":" + current.getMinutes() + ":" + current.getSeconds();
+
+                return currentDate + " " + currentTime;
+            }
+        </script>
+    </body>
+</html>
